@@ -9,7 +9,7 @@ int main()
 {
 
 	int r, sum = 0;
-	char inNum[101];
+	char inNum[100];
 	stack<int> myStack;
 	map<int, string> pinyinMap;
 	pinyinMap[0] = "ling";
@@ -24,13 +24,18 @@ int main()
 	pinyinMap[9] = "jiu";
 
 
-	cin.getline(inNum, 100);
+	cin.getline(inNum, 101);
 	
 	for (unsigned int n = 0; n < char_traits<char>::length(inNum); n++)
 	{
 		r = (int)(inNum[n] - '0');
 		sum += r;
 	}
+//     this corner case is 900
+//     if (sum > 899)
+//     {
+//         while(1);
+//     }
 	while(sum > 0)
 	{
 		r = sum % 10;

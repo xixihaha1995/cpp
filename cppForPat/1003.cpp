@@ -6,9 +6,16 @@ using namespace std;
 
 int main()
 {
-	char inNum[10];
-	cin.getline(inNum, 1);
-	cout << "from 1003\n";
+	string myStr;
+	int i;
+	getline(cin, myStr);
+	stringstream(myStr) >> i;
+	while (i > 0)
+	{
+		getline(cin, myStr);
+		cout << "Your entered num: " << myStr << endl;
+		i--;
+	}
 
 	return 0;
 

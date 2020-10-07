@@ -29,7 +29,7 @@ int main()
 
     return 0;
 }
-void printmove(movies_t movie) 
+void printmovie(movies_t movie) 
 {
     std::cout << movie.title;
     std::cout << "(" << movie.year << ")\n";

@@ -27,4 +27,10 @@ int main()
     std::cout << "And your movie is: \n";
     printmovie(yours);
 
+    return 0;
+}
+void printmove(movies_t movie) 
+{
+    std::cout << movie.title;
+    std::cout << "(" << movie.year << ")\n";
 }

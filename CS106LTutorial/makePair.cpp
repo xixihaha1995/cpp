@@ -9,4 +9,5 @@ int main()
     // auto [a, b] = p;
 
     std::cout << "p: " << p.first << "," << p.second << std::endl;
+    return 0;
 }

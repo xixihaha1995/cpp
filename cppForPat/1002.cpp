@@ -5,7 +5,7 @@
 #include <stack>
 using namespace std;
 
-int main()
+int main_1002()
 {
 
 	int r, sum = 0;

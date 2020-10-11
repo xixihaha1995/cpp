@@ -6,14 +6,20 @@ int main() {
     vec[0] = 'A';
     std::cout << vec.back() << std::endl;
 
-    for (size_t i = 0; i < vec.size(); i++) {
-        vec[i]++;
-        std::cout << vec[i] <<std::endl;
+    std::vector<char> vec2{'A', 'b', 'c'};
+
+    if (vec == vec2) {
+        std::cout << "why vec equals vec2? \n";
     }
-    for (auto& elem : vec) {
-        elem--;
-        std::cout << elem <<std::endl;
-    }
+
+    // for (size_t i = 0; i < vec.size(); i++) {
+    //     vec[i]++;
+    //     std::cout << vec[i] <<std::endl;
+    // }
+    // for (auto& elem : vec) {
+    //     elem--;
+    //     std::cout << elem <<std::endl;
+    // }
     return 0;
 
 

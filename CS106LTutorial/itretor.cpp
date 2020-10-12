@@ -17,8 +17,7 @@ int main() {
     // }
 
     std::map<int, int> map {{1, 6}, {1, 8}, {0, 3}, {3, 9}};
-    for (auto itMap = map.begin(); itMap != map.end(); ++itMap) {
-        const auto& [key, value] = *itMap;
+    for (const auto& [key, value]:map) {
         std::cout << key << ":" << value << std::endl;
     }
 

@@ -16,6 +16,12 @@ int main() {
         std::cout << *elem << std::endl;
     }
 
+    std::map<int> map  {{1, 6}, {1, 8}, {0, 3}, {3, 9}};
+    for (auto itMap = map.begin(); itMap != map.end(); ++itMap) {
+        const auto& [key, value] = *itMap;
+        std::cout << key << ":" << value << std::endl;
+    }
+
 
     return 0;
 }

@@ -16,7 +16,7 @@ int main() {
     //     std::cout << *elem << std::endl;
     // }
 
-    std::map<int, int> map {{1, 6}, {1, 8}, {0, 3}, {3, 9}};
+    std::map<int, int> map {{1, 8}, {0, 3}, {3, 9}, {1, 6}, {1, 8}, {0, 3}, {3, 9}};
     for (const auto& [key, value]:map) {
         std::cout << key << ":" << value << std::endl;
     }

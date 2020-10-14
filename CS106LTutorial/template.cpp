@@ -9,7 +9,9 @@ int main () {
     std::string c = "nihao";
     std::string d = "buhao";
     
-    std::string retur = my_min<std::string>(c, d);
+    // std::string retur = my_min<std::string>(c, d);
+    std::string retur = my_min(c, d);
+
     int number = my_min(2,-6);
     std::cout << retur << std::endl;
     std::cout << number << std::endl;

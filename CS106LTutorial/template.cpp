@@ -5,6 +5,15 @@ auto my_min(const T& a, const U& b) {
     return a < b ? a : b;
 }
 
+template <typename T>
+T my2min(vector<T>& nums) {
+    T elem = nums[0];
+    if (nums.size() == 1) return elem;
+    auto min = my2min(nums.subList(1));
+    if (elem < min) min = elem;
+    return min;
+}
+
 int main () {
     std::string c = "nihao";
     std::string d = "buhao";

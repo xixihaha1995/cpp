@@ -10,10 +10,10 @@ int main () {
     std::string d = "buhao";
     
     // std::string retur = my_min<std::string>(c, d);
-    std::string retur = my_min(c, d);
+    auto retur = my_min("neo", "leo");
 
     int number = my_min(2,-6);
-    std::cout << retur << std::endl;
+    std::cout << retur[0] << std::endl;
     std::cout << number << std::endl;
 
     return 0;

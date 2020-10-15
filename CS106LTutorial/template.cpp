@@ -46,10 +46,10 @@ int main () {
     // auto retur = my_min("neo", "leo");
     auto sumAdder = adder(4.2, -7.9, 8.223, 0.0, 1.753);
     auto minVaria = my2min(4.2, -7.9, 8.223, 0.0, 1.753);
-    auto [min, max] = minMax(4.2, -7.9, 8.223, 0.0, 1.753);
+    // auto [min, max] = minMax(4.2, -7.9, 8.223, 0.0, 1.753);
     // int number = my_min(2.7,-6.2);
     // std::cout << retur[0] << std::endl;
-    std::cout << max << std::endl;
+    // std::cout << max << std::endl;
 
     return 0;
 }

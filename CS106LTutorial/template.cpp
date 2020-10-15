@@ -8,7 +8,7 @@ auto my_min(const T& a, const U& b) {
 
 template <typename T, typename ...Ts>
 auto my2min(const T& num, Ts... args) {
-    auto min = my_min(args...);
+    auto min = my2min(args...);
     // T elem = nums[0];
     // if (nums.size() == 1) return elem;
     // auto min = my2min(nums.subList(1));
@@ -16,6 +16,10 @@ auto my2min(const T& num, Ts... args) {
     return min;
 }
 
+template <typename T>
+auto my2min(const T& num) {
+    return num;
+}
 int main () {
     std::string c = "nihao";
     std::string d = "buhao";

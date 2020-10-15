@@ -6,20 +6,20 @@ auto my_min(const T& a, const U& b) {
     return a < b ? a : b;
 }
 
-va// template <typename T, typename ...Ts>
-// auto my2min(const T& num, Ts... args) {
-//     auto min = my2min(args...);
-//     // T elem = nums[0];
-//     // if (nums.size() == 1) return elem;
-//     // auto min = my2min(nums.subList(1));
-//     if (num < min) min = num;
-//     return min;
-// }
+template <typename T>
+auto my2min(const T& num) {
+    return num;
+}
 
-// template <typename T>
-// auto my2min(const T& num) {
-//     return num;
-// }
+template <typename T, typename ...Ts>
+auto my2min(const T& num, Ts... args) {
+    auto min = my2min(args...);
+    // T elem = nums[0];
+    // if (nums.size() == 1) return elem;
+    // auto min = my2min(nums.subList(1));
+    if (num < min) min = num;
+    return min;
+}
 
 template <typename T>
 T adder(T v) {

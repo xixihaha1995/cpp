@@ -1,10 +1,11 @@
 #include <iostream>
 #include <algorithm>
 #include <vector>
+#include <string>
 
 bool isVoewl(char c) {
-    std::vector<char> vec {"aeiou"};
-    return std::find(vec.begin(),vec.end(), c) != -1;
+    std::vector<char> vec {'a', 'e', 'i', 'o', 'u'};
+    return (std::find(vec.begin(),vec.end(), c) != vec.end());
 }
 
 int main() {

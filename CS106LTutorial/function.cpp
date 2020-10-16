@@ -10,8 +10,7 @@ bool isVoewl(char c) {
 
 int main() {
     std::cout << isVoewl('o') << std::endl;
-    auto is_less_than = [int limit](int val) {return (val < limit)};
-    std::cout << is_less_than
+    // auto is_less_than = [int limit](int val) {return (val < limit)};
 
     return 0;
 }

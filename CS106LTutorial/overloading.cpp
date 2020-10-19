@@ -6,7 +6,7 @@
 // }
 int global = 1;
 int& getGlobal() {
-    return global;
+    return global;//although return variable, it's indeed a reference
 }
 int main() {
     // Set& operator+=(const ValueType& value) {

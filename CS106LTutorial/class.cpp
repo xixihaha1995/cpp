@@ -7,7 +7,7 @@ class Rectangle {
     void set_value(int, int);
     int area() {return width*height;}
 
-}
+};
 
 void Rectangle::set_value(int x, int y) {
     width = x;
